@@ -1,7 +1,7 @@
 ---
 title: "「ごみの日」のオープンデータを 125 自治体で調べた"
 emoji: "🗑️"
-type: "idea"
+type: "tech"
 topics: ["opendata", "civictech", "データ分析", "自治体"]
 published: false
 ---
