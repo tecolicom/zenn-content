@@ -17,7 +17,7 @@ webcal://tecolicom.github.io/japan-gomi-data/ics/<自治体>/<コース>.ics
 例: webcal://tecolicom.github.io/japan-gomi-data/ics/hanno/a1.ics (飯能市 A-1 コース)
 ```
 
-どのコースを購読すればよいかは、全国地方公共団体コード・自治体名・対象の町名から引ける一覧表 `ics/index.csv` にまとめてある。
+どのコースを購読すればよいかは、全国地方公共団体コード・自治体名・対象の町名から引ける一覧表 [`ics/index.csv`](https://github.com/tecolicom/japan-gomi-data/blob/main/ics/index.csv) にまとめてある。
 
 このデータを全国に広げる準備として、まず埼玉県の 63 市町村と東京都の 62 区市町村、計 125 自治体について、ごみ収集日データの公開状況を調査した (2026 年 7 月 17〜18 日時点)。本稿はその結果の報告である。結論を先に書くと、**外部からオープンデータとして使える状態だったのは 3 自治体**だった。
 
@@ -95,7 +95,7 @@ S ランクは次の 3 自治体。
 
 :::
 
-(機械可読版 — 全自治体の軸別・総合スコアの CSV — は後述のリポジトリ `docs/triage/scores.csv` にある)
+(機械可読版 — 全自治体の軸別・総合スコアの CSV — は後述のリポジトリ [`docs/triage/scores.csv`](https://github.com/tecolicom/japan-gomi-data/blob/main/docs/triage/scores.csv) にある)
 
 ## 形式とライセンスの内訳
 
@@ -135,7 +135,7 @@ S ランクは次の 3 自治体。
 
 ## 台帳の公開と訂正
 
-今回の調査台帳 (全 125 自治体の出典 URL・形式・採点)、スコアの算出ルール、採点プログラムは、冒頭の [tecolicom/japan-gomi-data](https://github.com/tecolicom/japan-gomi-data) にある。自治体ごとの調査結果は `municipalities/<県>/<自治体>/survey.yaml` に、全県まとめは 1 枚の CSV (`docs/triage/triage.csv`) にあり、自分の自治体を団体コードや名前で引ける。
+今回の調査台帳 (全 125 自治体の出典 URL・形式・採点)、スコアの算出ルール、採点プログラムは、冒頭の [tecolicom/japan-gomi-data](https://github.com/tecolicom/japan-gomi-data) にある。自治体ごとの調査結果は [`municipalities/<県>/<自治体>/survey.yaml`](https://github.com/tecolicom/japan-gomi-data/tree/main/municipalities) に、全県まとめは 1 枚の CSV ([`docs/triage/triage.csv`](https://github.com/tecolicom/japan-gomi-data/blob/main/docs/triage/triage.csv)) にあり、自分の自治体を団体コードや名前で引ける。
 
 調査は外部からの確認で、1 自治体あたり短時間のため見落としがあり得る (越生町の例)。誤りの指摘を受けて台帳は随時更新する。
 
