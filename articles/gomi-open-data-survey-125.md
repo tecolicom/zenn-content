@@ -10,14 +10,7 @@ published: true
 
 自治体のごみ収集日程を機械可読なオープンデータとして集約するリポジトリ [tecolicom/japan-gomi-data](https://github.com/tecolicom/japan-gomi-data) を準備している (CC BY 4.0)。自治体の公式資料から収集日程を抽出し、全国共通のごみ種別語彙と共通スキーマ (YAML) に正規化して収録するもので、現在 9 自治体・341 コースを収録している (上富良野町・飯能市・日高市・中野区・杉並区・調布市・練馬区・川崎市・鯖江市)。各自治体について、抽出元の URL、祝日・年末年始の運用ルール、独立した資料との照合結果 (何件を突き合わせて不一致が何件だったか) を記録している。
 
-全コースの収集日は iCalendar (.ics) 形式でも配信しており、URL をカレンダーアプリに登録すると収集日が終日予定として表示される。
-
-```
-webcal://tecolicom.github.io/japan-gomi-data/ics/<自治体>/<コース>.ics
-例: webcal://tecolicom.github.io/japan-gomi-data/ics/hanno/a1.ics (飯能市 A-1 コース)
-```
-
-どのコースを購読すればよいかは、全国地方公共団体コード・自治体名・対象の町名から引ける一覧表 [`ics/index.csv`](https://github.com/tecolicom/japan-gomi-data/blob/main/ics/index.csv) にまとめてある。
+全コースの収集日は iCalendar (.ics) 形式でも配信している。[公開ページ](https://tecolicom.github.io/japan-gomi-data/)で自治体を選ぶとコースごとの購読ボタンが出て、カレンダーアプリ (iPhone・Google カレンダー等) に収集日が終日予定として入る。購読 URL は `webcal://tecolicom.github.io/japan-gomi-data/ics/<自治体>/<コース>.ics` の形で、全コースの URL・対象の町名は一覧表 [`ics/index.csv`](https://github.com/tecolicom/japan-gomi-data/blob/main/ics/index.csv) からも引ける。
 
 このデータを全国に広げる準備として、まず埼玉県の 63 市町村と東京都の 62 区市町村、計 125 自治体について、ごみ収集日データの公開状況を調査した (2026 年 7 月 17〜18 日時点)。本稿はその結果の報告である。結論を先に書くと、**明示的な利用許諾つきの機械可読データを、十分な情報の細かさで公開できていた自治体 — 後述の採点で最上位の S ランク — は 3 つ**だった。
 
